@@ -4,9 +4,7 @@ from utils.arg_class import ArgClass
 
 
 class PreProcessData(ArgClass):
-
-    encodings = ['utf-8', 'cp1250', 'cp1251', 'cp1252', 'cp1253', 'cp1254', 'cp1255', 'cp1256',
-                 'cp1257',
+    encodings = ['utf-8', 'cp1250', 'cp1251', 'cp1252', 'cp1253', 'cp1254', 'cp1255', 'cp1256', 'cp1257',
                  'cp1258', 'iso8859_15', 'iso8859_16']
 
     def __init__(self, filename):
@@ -39,4 +37,3 @@ class PreProcessData(ArgClass):
         filename = self.file_name
         dataset = pd.read_csv(filename, delimiter=';', encoding=encoding)
         return dataset
-
