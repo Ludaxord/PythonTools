@@ -1,3 +1,7 @@
+beautifulsoup4
+youtube_dl
+moviepy
+pytube
 pandas
 Pillow
 gpuinfo
